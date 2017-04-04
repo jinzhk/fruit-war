@@ -1,0 +1,123 @@
+html, body {margin: 0; padding: 0;}
+
+canvas {display: block;}
+
+#debug-canvas {
+	margin: 0 auto;
+}
+
+#game-container {
+	position: relative;
+	width: 640px;
+	height: 480px;
+	margin: 30px auto 0;
+	background: url("../images/splashscreen.png");
+	border: 1px solid #555;
+}
+
+.game-layer {
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.tip-message {
+	color: white;
+	font: 12px Arial;
+}
+
+/* 游戏开始画面 */
+#screen-game-start {
+	padding-top: 225px;
+}
+
+#screen-game-start img {
+	display: block;
+	margin: 25px auto;
+	cursor: pointer;
+}
+
+/* 关卡选择画面 */
+#screen-level-select {
+	padding-top: 150px;
+	padding-left: 50px;
+}
+
+#screen-level-select input {
+	width: 64px;
+	height: 64px;
+	margin: 20px;
+	color: yellow;
+	font-size: 20px;
+	cursor: pointer;
+	border: 0;
+	background: url("../images/icons/level.png") no-repeat;
+}
+
+/* 加载资源画面 */
+#screen-loading {
+	background: rgba(100, 100, 100, 0.3);
+}
+
+#screen-loading .tip-message {
+	height: 48px;
+	margin-top: 400px;
+	text-align: center;
+	background: url("../images/loader.gif") no-repeat center;
+}
+
+/* 计分板 */
+#screen-score {
+	width: 100%;
+	height: 60px;
+	color: white;
+	font: 32px Comic Sans MS;
+	text-shadow: 0 0 2px #000;
+}
+
+#screen-score img {
+	position: relative;
+	top: 10px;
+	padding-left: 10px;
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+#screen-score #score {
+	position: absolute;
+	top: 5px;
+	right: 20px;
+}
+
+/* 结束画面 */
+#screen-ending {
+	display: center;
+}
+
+#screen-ending div {
+	height: 340px;
+	padding-top: 50px;
+	padding-left: 100px;
+	text-align: left;
+	border: 1px;
+	background: rgba(1, 1, 1, .5);
+}
+
+#screen-ending p {
+	color: white;
+	font: 20px Comic Sans MS;
+	text-shadow: 0 0 20px #000;
+}
+
+#screen-ending p img {
+	position: relative;
+	top: 10px;
+	cursor: pointer;
+}
+
+#screen-ending .tip-message {
+	color: white;
+	font: 32px Comic Sans MS;
+	text-shadow: 0 0 2px #000;
+}

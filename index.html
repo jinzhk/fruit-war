@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fruit Game | Box2D</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/Box2dWeb-2.1.a.3.min.js"></script>
+	<script src="js/game.js"></script>
+</head>
+<body>
+	<div class="container" id="game-container">
+		<canvas class="game-layer" id="game-canvas" width="640" height="480"></canvas>
+		<div class="game-layer" id="screen-score">
+			<img src="images/icons/sound.png" id="btn-toggle-music">
+			<img src="images/icons/prev.png" id="btn-restart-level">
+			<span id="score">得分: 0</span>
+		</div>
+		<div class="game-layer" id="screen-game-start">
+			<img src="images/icons/play.png" alt="Play Game" id="btn-game-start">
+			<img src="images/icons/settings.png" alt="Settings" id="btn-game-settings">
+		</div>
+		<div class="game-layer" id="screen-level-select"></div>
+		<div class="game-layer" id="screen-loading">
+			<div class="tip-message"></div>
+		</div>
+		<div class="game-layer" id="screen-ending">
+			<div>
+				<p class="tip-message">
+					关卡结束语
+				</p>
+				<p id="play-current-level">
+					<img src="images/icons/prev.png"> 重玩这一关
+				</p>
+				<p id="play-next-level">
+					<img src="images/icons/next.png"> 玩下一关
+				</p>
+				<p id="screen-show-level">
+					<img src="images/icons/return.png"> 返回选择关卡
+				</p>
+			</div>
+		</div>
+	</div>
+	<canvas id="debug-canvas" width="1000" height="480" style="border: 1px solid black; display: none;"></canvas>
+</body>
+</html>
